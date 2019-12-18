@@ -5,12 +5,11 @@
 -- your preferred shortcuts.
 return {
   { 'a', 'Music' },             -- "A" for "Apple Music"
-  { 'b', 'Google Chrome' },     -- "B" for "Browser"
-  { 'c', 'Slack' },             -- "C for "Chat"
+  { 'b', 'Firefox' },           -- "B" for "Browser"
+  { 'c', 'Calendar' },          -- "C for "Calendar"
   { 'd', 'Remember The Milk' }, -- "D" for "Do!" ... or "Done!"
-  { 'e', 'Atom' },              -- "E" for "Editor"
   { 'f', 'Finder' },            -- "F" for "Finder"
-  { 'g', 'Mailplane 3' },       -- "G" for "Gmail"
+  { 'm', 'Mail' },              -- "M" for "Mail"
   { 's', 'Slack' },             -- "S" for "Slack"
   { 't', 'iTerm' },             -- "T" for "Terminal"
 }

@@ -76,7 +76,7 @@ end
 function hs.window.upLeft(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x
   f.y = max.y
@@ -93,7 +93,7 @@ end
 function hs.window.upCenter(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 4)
   f.y = max.y
@@ -110,7 +110,7 @@ end
 function hs.window.centerWithQuarterWidthHeight(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 4)
   f.y = max.y + (max.h / 4)
@@ -127,7 +127,7 @@ end
 function hs.window.downCenter(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 4)
   f.y = max.y + (max.h / 2)
@@ -144,7 +144,7 @@ end
 function hs.window.downLeft(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x
   f.y = max.y + (max.h / 2)
@@ -161,7 +161,7 @@ end
 function hs.window.downRight(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 2)
   f.y = max.y + (max.h / 2)
@@ -179,7 +179,7 @@ end
 function hs.window.upRight(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 2)
   f.y = max.y
@@ -196,7 +196,7 @@ end
 function hs.window.centerWithFullHeight(win)
   local f = win:frame()
   local screen = win:screen()
-  local max = screen:fullFrame()
+  local max = screen:frame()
 
   f.x = max.x + (max.w / 5)
   f.w = max.w * 3/5

@@ -44,8 +44,8 @@ return {
     { {},         '.',      'downCenter' },
     { {},         '/',      'downRight' },
     { {},         'n',      'nextScreen' },
-    { {'shift'},  'c',      'centerWithQuarterWidthHeight' },
-    { {},         'c',      'centerWithFullHeight' },
+    { {},         'c',      'centerWithQuarterWidthHeight' },
+    { {'shift'},  'c',      'centerWithFullHeight' },
     { {},         'right',  'moveOneScreenEast' },
     { {},         'left',   'moveOneScreenWest' },
   }

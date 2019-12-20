@@ -188,18 +188,18 @@ function hs.window.upRight(win)
   win:setFrame(f)
 end
 
--- +--------------+
--- |  |        |  |
--- |  |  HERE  |  |
--- |  |        |  |
--- +---------------+
+-- +----------------+
+-- |     |    |     |
+-- |     |HERE|     |
+-- |     |    |     |
+-- +----------------+
 function hs.window.centerWithFullHeight(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
 
-  f.x = max.x + (max.w / 5)
-  f.w = max.w * 3/5
+  f.x = max.x + (max.w / 4)
+  f.w = max.w / 2
   f.y = max.y
   f.h = max.h
   win:setFrame(f)

@@ -30,7 +30,7 @@ return {
   trigger   = 's',
   mappings  = {
     { {},         'return', 'maximize' },
-    { {},         'space',  'centerWithFullHeight' },
+    { {},         'space',  'center80WithFullHeight' },
     { {},         'h',      'left' },
     { {},         'j',      'down' },
     { {},         'k',      'up' },
@@ -44,7 +44,8 @@ return {
     { {},         '.',      'downCenter' },
     { {},         '/',      'downRight' },
     { {},         'n',      'nextScreen' },
-    { {},         'c',      'centerWithQuarterWidthHeight' },
+    { {'shift'},  'c',      'centerWithQuarterWidthHeight' },
+    { {},         'c',      'centerWithFullHeight' },
     { {},         'right',  'moveOneScreenEast' },
     { {},         'left',   'moveOneScreenWest' },
   }

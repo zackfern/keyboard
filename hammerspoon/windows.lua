@@ -240,6 +240,23 @@ function window.right60(win)
   win:setFrame(f)
 end
 
+-- +------------------+
+-- |   |          |   |
+-- |   |   HERE   |   |
+-- |   |          |   |
+-- +------------------+
+function window.center80WithFullHeight(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = max.w / 10
+  f.y = max.y
+  f.w = max.w * 0.8
+  f.h = max.h
+  win:setFrame(f)
+end
+
 function window.nextScreen(win)
   local currentScreen = win:screen()
   local allScreens = hs.screen.allScreens()

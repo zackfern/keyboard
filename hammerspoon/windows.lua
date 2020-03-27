@@ -289,8 +289,8 @@ function hs.window.pushToBottom(win)
   local screen = win:screen()
   local max = screen:frame()
 
-  -- Set window height to be current height + distance between top of screen and frame.
-  f.h = f.h + (f.y - max.y)
+  -- Set window height to be screen frame height - distance between top of screen and frame.
+  f.h = f.h + (max.h - f.y)
   win:setFrame(f)
 end
 

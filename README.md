@@ -89,6 +89,8 @@ Use <kbd>control</kbd> + <kbd>s</kbd> to turn on Window Layout Mode. Then, use a
 - Use <kbd>.</kbd> to send window to lower right quarter of screen
 - Use <kbd>space</kbd> to send window to center of screen
 - Use <kbd>enter</kbd> to resize window to fill the screen
+- Use <kbd>t</kbd> to resize the top of the window to the top of the screen
+- Use <kbd>b</kbd> to resize the bottom of the window to the bottom of the screen
 - Use <kbd>n</kbd> to send window to the next monitor
 - Use <kbd>←</kbd> to send window to the monitor on the left (if there is one)
 - Use <kbd>→</kbd> to send window to the monitor on the right (if there is one)

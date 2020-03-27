@@ -269,6 +269,31 @@ function hs.window.nextScreen(win)
   end
 end
 
+-- Push the top of the window to the top of the screen.
+-- Emulates the functionality of double-clicking on the top of a window when resizing.
+function hs.window.pushToTop(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  -- Set window height to be current height + distance between top of screen and frame.
+  f.h = f.h + (f.y - max.y)
+  f.y = max.y
+  win:setFrame(f)
+end
+
+-- Push the bottom of the window to the bottom of the screen.
+-- Emulates the functionality of double-clicking on the bottom of a window when resizing.
+function hs.window.pushToBottom(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  -- Set window height to be current height + distance between top of screen and frame.
+  f.h = f.h + (f.y - max.y)
+  win:setFrame(f)
+end
+
 windowLayoutMode = hs.hotkey.modal.new({}, 'F16')
 
 windowLayoutMode.entered = function()

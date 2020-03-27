@@ -282,6 +282,8 @@ function hs.window.pushToTop(win)
   win:setFrame(f)
 end
 
+-- Push the bottom of the window to the bottom of the screen.
+-- Emulates the functionality of double-clicking on the bottom of a window when resizing.
 function hs.window.pushToBottom(win)
   local f = win:frame()
   local screen = win:screen()
@@ -289,7 +291,6 @@ function hs.window.pushToBottom(win)
 
   -- Set window height to be current height + distance between top of screen and frame.
   f.h = f.h + (f.y - max.y)
-  -- f.y = max.y
   win:setFrame(f)
 end
 

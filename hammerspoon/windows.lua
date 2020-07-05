@@ -257,6 +257,40 @@ function window.center80WithFullHeight(win)
   win:setFrame(f)
 end
 
+-- +------------------+
+-- |    |             |
+-- |    |   HERE      |
+-- |    |             |
+-- +------------------+
+function window.right80WithFullHeight(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = max.w / 5
+  f.y = max.y
+  f.w = max.w * 0.8
+  f.h = max.h
+  win:setFrame(f)
+end
+
+-- +------------------+
+-- |             |    |
+-- |   HERE      |    |
+-- |             |    |
+-- +------------------+
+function window.left80WithFullHeight(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = 0
+  f.y = max.y
+  f.w = max.w * 0.8
+  f.h = max.h
+  win:setFrame(f)
+end
+
 function window.nextScreen(win)
   local currentScreen = win:screen()
   local allScreens = hs.screen.allScreens()

@@ -37,6 +37,8 @@ return {
     { {},         'l',      'right' },
     { {'shift'},  'h',      'left40' },
     { {'shift'},  'l',      'right60' },
+    { {},         ';',      'right80WithFullHeight' },
+    { {},         'g',      'left80WithFullHeight' },
     { {},         'u',      'upLeft' },
     { {},         'i',      'upCenter' },
     { {},         'o',      'upRight' },

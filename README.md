@@ -83,11 +83,15 @@ Use <kbd>control</kbd> + <kbd>s</kbd> to turn on Window Layout Mode. Then, use a
 - Use <kbd>l</kbd> to send window right (right half of screen)
 - Use <kbd>shift</kbd> + <kbd>h</kbd> to send window to left 40% of screen
 - Use <kbd>shift</kbd> + <kbd>l</kbd> to send window to right 60% of screen
-- Use <kbd>i</kbd> to send window to upper left quarter of screen
+- Use <kbd>u</kbd> to send window to upper left quarter of screen
+- Use <kbd>i</kbd> to resize window to a quarter of the screen and center at the top
 - Use <kbd>o</kbd> to send window to upper right quarter of screen
 - Use <kbd>,</kbd> to send window to lower left quarter of screen
-- Use <kbd>.</kbd> to send window to lower right quarter of screen
-- Use <kbd>space</kbd> to send window to center of screen
+- Use <kbd>.</kbd> to resize window to a quarter of the screen and center at the bottom
+- Use <kbd>/</kbd> to send window to lower right quarter of screen
+- Use <kbd>space</kbd> to resize window to 80% of screen width and center it
+- Use <kbd>g</kbd> to resize window to 80% of screen width and align to the left
+- Use <kbd>;</kbd> to resize window to 80% of screen width and align to the left
 - Use <kbd>enter</kbd> to resize window to fill the screen
 - Use <kbd>t</kbd> to resize the top of the window to the top of the screen
 - Use <kbd>b</kbd> to resize the bottom of the window to the bottom of the screen

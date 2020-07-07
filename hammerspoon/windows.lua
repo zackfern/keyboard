@@ -250,7 +250,7 @@ function window.center80WithFullHeight(win)
   local screen = win:screen()
   local max = screen:frame()
 
-  f.x = max.w / 10
+  f.x = max.x + (max.w / 10)
   f.y = max.y
   f.w = max.w * 0.8
   f.h = max.h
@@ -267,7 +267,7 @@ function window.right80WithFullHeight(win)
   local screen = win:screen()
   local max = screen:frame()
 
-  f.x = max.w / 5
+  f.x = max.x + (max.w / 5)
   f.y = max.y
   f.w = max.w * 0.8
   f.h = max.h
@@ -284,7 +284,7 @@ function window.left80WithFullHeight(win)
   local screen = win:screen()
   local max = screen:frame()
 
-  f.x = 0
+  f.x = max.x
   f.y = max.y
   f.w = max.w * 0.8
   f.h = max.h

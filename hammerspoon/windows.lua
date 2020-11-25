@@ -91,7 +91,7 @@ end
 -- |   +--------+    |
 -- |                 |
 -- +-----------------+
-function hs.window.upCenter(win)
+function window.upCenter(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
@@ -108,7 +108,7 @@ end
 -- |   |  HERE  |    |
 -- |   +--------+    |
 -- +-----------------+
-function hs.window.centerWithQuarterWidthHeight(win)
+function window.centerWithQuarterWidthHeight(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
@@ -125,7 +125,7 @@ end
 -- |   +--------+    |
 -- |   |  HERE  |    |
 -- +-----------------+
-function hs.window.downCenter(win)
+function window.downCenter(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
@@ -306,7 +306,7 @@ end
 
 -- Push the top of the window to the top of the screen.
 -- Emulates the functionality of double-clicking on the top of a window when resizing.
-function hs.window.pushToTop(win)
+function window.pushToTop(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
@@ -319,7 +319,7 @@ end
 
 -- Push the bottom of the window to the bottom of the screen.
 -- Emulates the functionality of double-clicking on the bottom of a window when resizing.
-function hs.window.pushToBottom(win)
+function window.pushToBottom(win)
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()

@@ -258,6 +258,23 @@ function window.center80WithFullHeight(win)
 end
 
 -- +------------------+
+-- |   |          |   |
+-- |   |   HERE   |   |
+-- |   |          |   |
+-- +------------------+
+function window.center90WithFullHeight(win)
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  f.x = max.x + (max.w / 20)
+  f.y = max.y
+  f.w = max.w * 0.9
+  f.h = max.h
+  win:setFrame(f)
+end
+
+-- +------------------+
 -- |    |             |
 -- |    |   HERE      |
 -- |    |             |

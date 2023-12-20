@@ -403,7 +403,23 @@ for i, mapping in ipairs(mappings) do
   windowLayoutMode:bindWithAutomaticExit(modifiers, trigger, function()
     --example: hs.window.focusedWindow():upRight()
     local fw = hs.window.focusedWindow()
+
+    -- Workaround for preventing windows from animating, see:
+    --    https://github.com/Hammerspoon/hammerspoon/issues/3224#issuecomment-1294359070
+    --
+    -- If the focused window has AXEnhancedUserInterface enabled, disable it so that it doesn't animate:
+    local axApp = hs.axuielement.applicationElement(fw:application())
+    local wasEnhanced = axApp.AXEnhancedUserInterface
+    if wasEnhanced then
+      axApp.AXEnhancedUserInterface = false
+    end
+
     fw[winFunction](fw)
+
+    -- And then turn it back on if needed:
+    if wasEnhanced then
+      axApp.AXEnhancedUserInterface = true
+    end
   end)
 end
 
